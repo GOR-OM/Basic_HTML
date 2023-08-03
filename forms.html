@@ -1,26 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-</head>
-<body>
+  </head>
+
+  <body>
     <h1>This is a form :</h1>
     <header>
-        <nav>
-            <ul>
-                <li><a href="/f.html">Home</a></li>
-                <li><a href="/a.html">About</a></li>
-                <li><a href="/service.html">Services</a></li>
-                <li><a href="/table.html">Table</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="/f.html">Home</a></li>
+          <li><a href="/a.html">About</a></li>
+          <li><a href="/service.html">Services</a></li>
+          <li><a href="/table.html">Table</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        
+      <div>
+        <form action="form.php">
+          <input type="text" placeholder="Please Enter your name : " /><br />
+          <hr />
+          <label for="sectionids">
+            <input
+              type="radio"
+              value="section a"
+              name="section"
+              id="sectionids"
+            />section A
+          </label>
+          <br />
+          <label for="sectionidb">
+            <input
+              type="radio"
+              value="section b"
+              name="section"
+              id="sectionidb"
+            />section B
+          </label>
+          <br />
+          <label for="sedtionidc">
+            <input
+              type="radio"
+              value="section c"
+              name="section"
+              id="sedtionidc"
+            />section C
+          </label>
+          <br />
+          <hr />
+          <input
+            type="checkbox"
+            name="interest"
+            id="interest1"
+            value="sports"
+          />
+          <label for="interest1">Sports</label><br />
+
+          <input type="checkbox" name="interest" id="interest2" value="music" />
+          <label for="interest2">Music</label><br />
+
+          <input
+            type="checkbox"
+            name="interest"
+            id="interest3"
+            value="movies"
+          />
+          <label for="interest3">Movies</label><br />
+
+          <input
+            type="checkbox"
+            name="interest"
+            id="interest4"
+            value="travel"
+          />
+
+          <label for="interest4">Travel</label><br />
+          <hr />
+
+          <textarea
+            name="message"
+            id="message"
+            rows="4"
+            cols="50"
+            placeholder="please enter your text here"
+          ></textarea>
+          <br />
+          <hr />
+          <select name="fruit" id="fruit">
+            <option value="default">select your favourit frout :</option>
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+            <option value="orange">Orange</option>
+            <option value="grapes">Grapes</option>
+            <option value="watermelon">Watermelon</option>
+          </select>
+          <br />
+          <hr />
+          <input
+            type="date"
+            name="selectedDate"
+            id="selectedDate"
+            value="2003-05-01"
+          />
+          <br />
+          <hr />
+          <button type="reset">Clear</button>
+          <br />
+          <hr />
+          <button type="button">Cancel</button>
+          <hr />
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
     </main>
-    
-</body>
+  </body>
 </html>
