@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
+    <link rel="stylesheet" href="style1.css" />
   </head>
 
   <body>
@@ -11,11 +12,11 @@
     <header>
       <nav>
         <ul>
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/a.html">About</a></li>
-          <li><a href="/service.html">Services</a></li>
-          <li><a href="/table.html">Table</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="a.html">About</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="table.html">Table</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -24,32 +25,26 @@
         <form action="form.php">
           <input type="text" placeholder="Please Enter your name : " /><br />
           <hr />
-          <label for="sectionids">
-            <input
-              type="radio"
-              value="section a"
-              name="section"
-              id="sectionids"
-            />section A
+          <label class="container">
+            <input type="radio" name="sec">Section A
+            <span class="rado"></span>
+          </label><br>
+          
+          <label class="container">
+            <input type="radio" name="sec">Section B
+            <span class="radio"></span>
+          </label><br>
+          
+          <label class="container">
+            <input type="radio" name="sec">Section C
+            <span class="rado"></span>
+          </label><br>
+          
+          <label class="container">
+            <input type="radio" name="sec">Section D
+            <span class="radio"></span>
           </label>
-          <br />
-          <label for="sectionidb">
-            <input
-              type="radio"
-              value="section b"
-              name="section"
-              id="sectionidb"
-            />section B
-          </label>
-          <br />
-          <label for="sedtionidc">
-            <input
-              type="radio"
-              value="section c"
-              name="section"
-              id="sedtionidc"
-            />section C
-          </label>
+
           <br />
           <hr />
           <input
